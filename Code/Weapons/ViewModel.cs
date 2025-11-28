@@ -85,9 +85,6 @@ public partial class ViewModel : WeaponModel, ICameraSetup, IGameEventHandler<Pl
 
 	protected override void OnStart()
 	{
-		if ( IsThrowable )
-			ModelRenderer?.Set( "throwable_type", (int)ThrowableType );
-
 		// Somehow?
 		if ( Owner.IsValid() )
 			Owner.OnJump += OnPlayerJumped;
@@ -272,17 +269,6 @@ public partial class ViewModel : WeaponModel, ICameraSetup, IGameEventHandler<Pl
 		// Weapon state
 		ModelRenderer.Set( "b_empty", !Equipment.GetComponentInChildren<WeaponAmmo>()?.HasAmmo ?? false );
 	}
-
-	public enum ThrowableTypeEnum
-	{
-		HEGrenade,
-		SmokeGrenade,
-		StunGrenade,
-		Molotov,
-		Flashbang
-	}
-
-	[Property, ShowIf( nameof( IsThrowable ), true ), Group( "Configuration" )] public ThrowableTypeEnum ThrowableType { get; set; }
 
 	/// <summary>
 	/// Should we play deploy effects?

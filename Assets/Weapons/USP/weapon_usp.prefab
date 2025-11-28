@@ -12,6 +12,7 @@
     "NetworkMode": 2,
     "NetworkInterpolation": true,
     "NetworkOrphaned": 0,
+    "NetworkTransmit": true,
     "OwnerTransfer": 1,
     "Components": [
       {
@@ -63,6 +64,7 @@
         "NetworkMode": 2,
         "NetworkInterpolation": true,
         "NetworkOrphaned": 0,
+        "NetworkTransmit": true,
         "OwnerTransfer": 1,
         "Components": [
           {
@@ -166,7 +168,6 @@
             "SupportedFireModes": [
               "Semi"
             ],
-            "TracerEffect": null,
             "VelocitySpreadScale": 0.25
           },
           {
@@ -265,9 +266,11 @@
             "PositionOffset": "0.5,0.2,1.5"
           },
           {
-            "__type": "Facepunch.Aimable",
-            "__guid": "a4ab8706-e8d7-4e87-87a1-bb39ede630c6",
+            "__type": "Facepunch.ManualOffset",
+            "__guid": "0513d4d2-3eff-4289-a7b3-8021ece97f1f",
             "__enabled": true,
+            "AimAngleOffset": "0,0,0",
+            "AimOffset": "0,0,-0.2",
             "InputActions": [
               "Attack2"
             ],

@@ -33,7 +33,7 @@ public partial class Melee : WeaponInputAction
 	/// Do shoot effects
 	/// </summary>
 	[Rpc.Broadcast]
-	protected void DoEffects()
+	protected void DoEffects( GameObject hit )
 	{
 		if ( SwingSound is not null )
 		{
@@ -48,6 +48,11 @@ public partial class Melee : WeaponInputAction
 
 		// First person
 		Equipment?.ViewModel?.ModelRenderer.Set( "b_attack", true );
+
+		if ( hit.IsValid() )
+		{
+			Equipment?.ViewModel?.ModelRenderer.Set( "b_attack_has_hit", true );
+		}
 	}
 
 	private void CreateImpactEffects( GameObject hitObject, Surface surface, Vector3 pos, Vector3 normal )
@@ -76,11 +81,11 @@ public partial class Melee : WeaponInputAction
 		{
 			if ( !tr.Hit )
 			{
-				DoEffects();
+				DoEffects( null );
 				return;
 			}
 
-			DoEffects();
+			DoEffects( tr.GameObject );
 			CreateImpactEffects( tr.GameObject, tr.Surface, tr.EndPosition, tr.Normal );
 
 			// Inflict damage on whatever we find.

@@ -81,7 +81,7 @@
         if ( MyTeam == Team.Unassigned || EnemyTeam == Team.Unassigned )
             return;
 
-        if ( GameMode.Instance.IsValid() && GameMode.Instance.Get<TeamScoring>() is { } teamScoring )
+        if ( GameMode.Instance.IsValid() && GameMode.Instance.Get<TeamScoring>() is { IsValid: true } teamScoring )
         {
             MyTeamScore = teamScoring.MyTeamScoreFormatted;
             EnemyTeamScore = teamScoring.OpposingTeamScoreFormatted;

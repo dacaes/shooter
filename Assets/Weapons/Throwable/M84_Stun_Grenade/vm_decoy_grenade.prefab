@@ -49,7 +49,7 @@
         "__type": "Sandbox.SkinnedModelRenderer",
         "__guid": "77e54bf0-ff2c-4a82-823f-f45ed161e766",
         "__enabled": true,
-        "AnimationGraph": "weapons/throwable/first_person_arms_hc1_throwables.vanmgrph",
+        "AnimationGraph": null,
         "BodyGroups": 21,
         "BoneMergeTarget": null,
         "CreateAttachments": false,
