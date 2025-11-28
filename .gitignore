@@ -25,5 +25,6 @@ Exports/*
 
 *launchSettings.json
 *.sln
+*.slnx
 
 *idea

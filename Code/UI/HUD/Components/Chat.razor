@@ -4,13 +4,14 @@
 @using Facepunch.UI;
 @using Facepunch;
 
+@namespace Facepunch.UI
 @inherits PanelComponent
 @implements Component.INetworkListener
 @implements IGameEventHandler<TeamAssignedEvent>
 
 @attribute [StyleSheet]
 
-@if (!MainHUD.IsHudEnabled)
+@if ( !MainHUD.IsHudEnabled )
     return;
 
 <root class="absolute inset-0">
