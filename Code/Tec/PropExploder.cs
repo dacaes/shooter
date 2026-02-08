@@ -2,9 +2,9 @@ namespace Tec;
 
 public class PropExploder : Component
 {
-	[Property] public float damageMultiplier { get; set; } = 3f;
+	[Property] public float DamageMultiplier { get; set; } = 3f;
 
-	private Component lastValidAttacker = null;
+	private GameObject _lastValidAttacker;
 	
 	[RequireComponent]
 	public Exploder Exploder
@@ -27,25 +27,19 @@ public class PropExploder : Component
 	
 	protected override void OnStart()
 	{
-		// Invoke( 4f, ExplodeTest);
 		Prop.OnPropBreak += Explode;
-		Prop.OnPropTakeDamage += OnPropTakeDamage;
 	}
 
-	private void OnPropTakeDamage( DamageInfo damage )
+	protected override void OnFixedUpdate()
 	{
-		// Log.Info( $"->>>>>>>>>>>>>>>>>>>>>>>>>> {damage.ToString()}" );
-		var attacker = damage.Attacker?.GetComponent<Component>();
-		if ( attacker != null ) lastValidAttacker = attacker;
+		if ( Prop.LastAttacker != null ) _lastValidAttacker = Prop.LastAttacker;
 	}
-	
+
 	private void Explode()
 	{
-		var attacker = Prop.LastAttacker?.GetComponent<Component>();
+		// Log.Info("EXPLODEEEEEEEEEEEEEE"  );
+		// Log.Info( $"Log lastvalidattacker -------------------> {_lastValidAttacker}" );
 		
-		// Log.Info( $"Log attacker -------------------> {Prop.LastAttacker?.GetComponent<Component>()}" );
-		
-		Exploder.Explode( WorldPosition, Prop.Model.Data.ExplosionRadius, Prop.Model.Data.ExplosionDamage * damageMultiplier,
-			attacker ?? lastValidAttacker, this, Exploder.DamageFalloff );
+		Exploder.Explode( WorldPosition, Prop.Model.Data.ExplosionRadius, Prop.Model.Data.ExplosionDamage * DamageMultiplier, _lastValidAttacker.GetComponent<Component>(), this, Exploder.DamageFalloff );
 	}
 }

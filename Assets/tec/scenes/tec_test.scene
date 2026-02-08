@@ -150,6 +150,31 @@
           {
             "Target": {
               "Type": "Component",
+              "IdValue": "b1260496-0fea-43a7-a741-411cdc0108bc"
+            },
+            "Property": "TeamLoadouts",
+            "Value": [
+              {
+                "Team": "Terrorist",
+                "Equipment": [
+                  "weapons/usp/usp.equip",
+                  "weapons/knife/knife.equip",
+                  "weapons/throwable/he_grenade/he_grenade.equip"
+                ]
+              },
+              {
+                "Team": "CounterTerrorist",
+                "Equipment": [
+                  "weapons/usp_sd/usp_sd.equip",
+                  "weapons/knife_bayonet/knife_bayonet.equip",
+                  "weapons/throwable/he_grenade/he_grenade.equip"
+                ]
+              }
+            ]
+          },
+          {
+            "Target": {
+              "Type": "Component",
               "IdValue": "7e1e5a0a-7cef-4388-aa2f-44ac5088662e"
             },
             "Property": "__enabled",
@@ -177,7 +202,7 @@
               "IdValue": "eb59db6f-2e1b-4290-8ea3-98f00b7ad4bc"
             },
             "Property": "RespawnDelaySeconds",
-            "Value": 2
+            "Value": 0
           }
         ],
         "MovedObjects": [
@@ -328,7 +353,7 @@
         "b4ca6d36-f647-49b3-9151-8ef4c63aeddd": "fe2161e5-285e-4a17-96d4-8f772d8b8317",
         "50de49ef-0287-435d-b570-e48047718014": "ec11469d-7277-4c55-94be-54fc37fb35db",
         "4dc414cd-ed6d-4fcd-bd26-0c4c340b5301": "374405c6-ea6c-4efa-b4e4-c0f0ece618e5",
-        "cd758b57-adde-4489-8b9c-9cdb9b96cb45": "0a343781-2c2e-456c-ae44-14b769a1b923"
+        "9ba4a451-717a-4cfd-8fe0-dde420593fd2": "df909acc-6fa2-493e-9722-1351078c6e19"
       }
     },
     {
@@ -910,171 +935,57 @@
     {
       "__guid": "47f8a592-9ec3-44b5-92ad-77184c32ed7a",
       "__version": 2,
-      "Flags": 0,
-      "Name": "oil_drum_explosive",
-      "Position": "17.70355,62.51065,0.03189008",
-      "Rotation": "0,0,0,1",
-      "Scale": "1,1,1",
-      "Tags": "",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkFlags": 0,
-      "NetworkOrphaned": 0,
-      "NetworkTransmit": true,
-      "OwnerTransfer": 1,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "202e5bc7-7cc3-464f-a50d-92c4794e77c5",
-          "__enabled": true,
-          "Flags": 0,
-          "BodyGroups": 18446744073709551615,
-          "Health": 100,
-          "IsStatic": false,
-          "MaterialGroup": null,
-          "Model": "models/sbox_props/oil_drum/oil_drum_explosive.vmdl",
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "OnPropBreak": null,
-          "OnPropTakeDamage": null,
-          "StartAsleep": false,
-          "Tint": "1,1,1,1"
-        },
-        {
-          "__type": "Sandbox.ModelRenderer",
-          "__guid": "a1fea57e-3293-4c18-9e5d-81a2aab6ab0f",
-          "__enabled": true,
-          "Flags": 0,
-          "BodyGroups": 18446744073709551615,
-          "CreateAttachments": false,
-          "LodOverride": null,
-          "MaterialGroup": null,
-          "MaterialOverride": null,
-          "Materials": null,
-          "Model": "models/sbox_props/oil_drum/oil_drum_explosive.vmdl",
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "RenderOptions": {
-            "GameLayer": true,
-            "OverlayLayer": false,
-            "BloomLayer": false,
-            "AfterUILayer": false
-          },
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
-        },
-        {
-          "__type": "Sandbox.ModelCollider",
-          "__guid": "b416650f-d3ef-4026-b8eb-130978d370bd",
-          "__enabled": true,
-          "Flags": 0,
-          "ColliderFlags": 0,
-          "Elasticity": null,
-          "Friction": null,
-          "IsTrigger": false,
-          "Model": "models/sbox_props/oil_drum/oil_drum_explosive.vmdl",
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "OnObjectTriggerEnter": null,
-          "OnObjectTriggerExit": null,
-          "OnTriggerEnter": null,
-          "OnTriggerExit": null,
-          "RollingResistance": null,
-          "Static": false,
-          "Surface": null,
-          "SurfaceVelocity": "0,0,0"
-        },
-        {
-          "__type": "Sandbox.Rigidbody",
-          "__guid": "62799dc0-7281-4071-ae79-e74fcc1c5201",
-          "__enabled": true,
-          "Flags": 0,
-          "AngularDamping": 0,
-          "EnableImpactDamage": true,
-          "EnhancedCcd": false,
-          "Gravity": true,
-          "GravityScale": 1,
-          "ImpactDamage": 100,
-          "LinearDamping": 0,
-          "Locking": {
-            "X": false,
-            "Y": false,
-            "Z": false,
-            "Pitch": false,
-            "Yaw": false,
-            "Roll": false
-          },
-          "MassCenterOverride": "0,0,0",
-          "MassOverride": 80,
-          "MinImpactDamageSpeed": 1200,
-          "MotionEnabled": true,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "OverrideMassCenter": false,
-          "RigidbodyFlags": "DisableCollisionSounds",
-          "StartAsleep": false
-        },
-        {
-          "__type": "Tec.PropExploder",
-          "__guid": "9f33004a-3371-440a-a74b-72b4148ce482",
-          "__enabled": true,
-          "Flags": 0,
-          "damageMultiplier": 3,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null
-        },
-        {
-          "__type": "Tec.Exploder",
-          "__guid": "2903de28-9f61-4206-b658-231a5043ce67",
-          "__enabled": true,
-          "Flags": 0,
-          "DamageFalloff": [
-            {
-              "x": 1,
-              "y": 1,
-              "in": 0,
-              "out": 0,
-              "mode": "Mirrored"
+      "__Prefab": "tec/prefabs/oil_drum_explosive.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "9db13473-29b3-44f2-9614-ac87380c5322"
             },
-            {
-              "x": 0,
-              "y": 0,
-              "in": 0,
-              "out": 0,
-              "mode": "Mirrored"
-            }
-          ],
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "ScreenShakeIntensity": 3,
-          "ScreenShakeLifeTime": 1.5
-        }
-      ],
-      "Children": []
+            "Property": "Position",
+            "Value": "98.4262,163.3527,0.03183959"
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "9db13473-29b3-44f2-9614-ac87380c5322": "47f8a592-9ec3-44b5-92ad-77184c32ed7a",
+        "78c7b8a2-fdb9-425d-9159-03d33a4a19ed": "202e5bc7-7cc3-464f-a50d-92c4794e77c5",
+        "04f1396b-c280-4929-b32c-5784fb031d76": "a1fea57e-3293-4c18-9e5d-81a2aab6ab0f",
+        "8eb0ff4f-caec-4234-ad31-9b5227687641": "b416650f-d3ef-4026-b8eb-130978d370bd",
+        "e32be1fe-5218-4e51-a4ab-ed4f58a70421": "62799dc0-7281-4071-ae79-e74fcc1c5201",
+        "0f066520-b898-4237-96f5-8c5540b10fee": "9f33004a-3371-440a-a74b-72b4148ce482",
+        "e6fc3d1a-f3ea-457f-933b-edd0fa3c96c9": "2903de28-9f61-4206-b658-231a5043ce67"
+      }
+    },
+    {
+      "__guid": "c59021e4-d7ff-4c9c-8af9-8c94afb3b218",
+      "__version": 2,
+      "__Prefab": "prefabs/door.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "06c40250-1e5a-44ee-818f-ef139d0cf6f4"
+            },
+            "Property": "Position",
+            "Value": "104.1188,303.0328,0.01039886"
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "06c40250-1e5a-44ee-818f-ef139d0cf6f4": "c59021e4-d7ff-4c9c-8af9-8c94afb3b218",
+        "92f66c14-2ad3-4db7-a4d3-f154296045fe": "af759a12-12c0-404c-8b95-506f570d3106",
+        "cb88b133-2d16-4209-b014-24bbf27fb8d0": "52e98909-c239-485c-a690-e847d62e70e9",
+        "5f4fcae3-9810-493c-bd5f-2d9d3a4fb20a": "2c3bbdfd-8c74-40e5-af51-d69904e973a7"
+      }
     }
   ],
   "SceneProperties": {
@@ -1101,7 +1012,6 @@
   "Title": "minimal",
   "Description": null,
   "__references": [
-    "facepunch.oildrumexplosive#143819",
     "facepunch.tv#143951"
   ],
   "__version": 3

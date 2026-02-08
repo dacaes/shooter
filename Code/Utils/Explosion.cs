@@ -23,7 +23,10 @@ public static class Explosion
 
 		foreach ( var obj in objectsInArea )
 		{
-			if ( obj.Root.GetComponentInChildren<HealthComponent>() is not { } hc )
+			var hc = obj.Root.GetComponentInChildren<HealthComponent>();
+			var prop = obj.Root.GetComponentInChildren<Prop>();
+			
+			if ( hc == null && prop == null)
 				continue;
 
 			// If the object isn't in line of sight, fuck it off
@@ -38,8 +41,12 @@ public static class Explosion
 			var damage = baseDamage * falloff.Evaluate( distance / radius );
 			var direction = (obj.WorldPosition - point).Normal;
 			var force = direction * distance * 50f;
+
+			DamageInfo damageInfo =
+				new DamageInfo( attacker, damage, inflictor, point, force, Flags: DamageFlags.Explosion );
 			
-			hc.TakeDamage( new DamageInfo( attacker, damage, inflictor, point, force, Flags: DamageFlags.Explosion ) );
+			hc?.TakeDamage(damageInfo);
+			prop?.OnDamage( Tec.Utils.CreateDamageInfo(damageInfo) );
 		}
 	}
 }
