@@ -1,0 +1,1108 @@
+{
+  "__guid": "44449c25-3cc2-4490-93ce-bfa49365ddea",
+  "GameObjects": [
+    {
+      "__guid": "a71fcf99-0b2d-4e67-908b-6e51a11e6b23",
+      "__version": 2,
+      "Flags": 0,
+      "Name": "Scene Information",
+      "Position": "0,0,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkFlags": 0,
+      "NetworkOrphaned": 0,
+      "NetworkTransmit": true,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.SceneInformation",
+          "__guid": "eb8ab91c-1d2f-43af-a7a2-b6fb65b80664",
+          "__enabled": true,
+          "Flags": 0,
+          "Author": null,
+          "Changes": "",
+          "Description": "",
+          "Group": null,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "SceneTags": "",
+          "Title": "minimal",
+          "Version": null
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "bb399cad-7f2a-4b51-809e-82998c01e54a",
+      "__version": 2,
+      "__Prefab": "prefabs/game_modes/team_deathmatch.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "e6e1bff2-29ad-41a4-9e55-8b5ca7a11783"
+            },
+            "Parent": {
+              "Type": "GameObject",
+              "IdValue": "f7c25223-1ca5-4076-9d06-aa3c3c46f4a1"
+            },
+            "PreviousElement": {
+              "Type": "Component",
+              "IdValue": "91ab47da-c178-479c-8af6-c7515eba5759"
+            },
+            "ContainerProperty": "Components",
+            "IsContainerArray": true,
+            "Data": {
+              "__type": "Facepunch.EquipmentDropper",
+              "__guid": "e6e1bff2-29ad-41a4-9e55-8b5ca7a11783",
+              "__enabled": true,
+              "Flags": 0,
+              "Categories": [
+                "Primary",
+                "Secondary",
+                "Utility",
+                "Special"
+              ],
+              "LimitedDropOnDeath": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null
+            }
+          },
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "e7771e39-e4f6-4261-82ef-d93af438ef51"
+            },
+            "Parent": {
+              "Type": "GameObject",
+              "IdValue": "f7c25223-1ca5-4076-9d06-aa3c3c46f4a1"
+            },
+            "PreviousElement": {
+              "Type": "Component",
+              "IdValue": "e6e1bff2-29ad-41a4-9e55-8b5ca7a11783"
+            },
+            "ContainerProperty": "Components",
+            "IsContainerArray": true,
+            "Data": {
+              "__type": "Facepunch.BotWeaponAllocator",
+              "__guid": "e7771e39-e4f6-4261-82ef-d93af438ef51",
+              "__enabled": true,
+              "Flags": 0,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "TeamLoadouts": [
+                {
+                  "Team": "Terrorist",
+                  "Equipment": [
+                    "weapons/mp5/mp5.equip",
+                    "weapons/m700/m700.equip",
+                    "weapons/m4a1/m4a1.equip",
+                    "weapons/spaghelli/spaghelli.equip"
+                  ]
+                },
+                {
+                  "Team": "CounterTerrorist",
+                  "Equipment": [
+                    "weapons/mp5/mp5.equip",
+                    "weapons/m700/m700.equip",
+                    "weapons/m4a1/m4a1.equip",
+                    "weapons/spaghelli/spaghelli.equip"
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "f7c25223-1ca5-4076-9d06-aa3c3c46f4a1"
+            },
+            "Property": "Position",
+            "Value": "176,32,2"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "f7c25223-1ca5-4076-9d06-aa3c3c46f4a1"
+            },
+            "Property": "Rotation",
+            "Value": "0,0,-0.3826834,0.9238796"
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "7e1e5a0a-7cef-4388-aa2f-44ac5088662e"
+            },
+            "Property": "__enabled",
+            "Value": false
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "7e1e5a0a-7cef-4388-aa2f-44ac5088662e"
+            },
+            "Property": "MinPlayerCount",
+            "Value": 2
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "19d65ae4-28c5-47b5-80fc-8240b0d78368"
+            },
+            "Property": "MinPlayerCount",
+            "Value": 4
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "eb59db6f-2e1b-4290-8ea3-98f00b7ad4bc"
+            },
+            "Property": "RespawnDelaySeconds",
+            "Value": 2
+          }
+        ],
+        "MovedObjects": [
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "7e1e5a0a-7cef-4388-aa2f-44ac5088662e"
+            },
+            "NewParent": {
+              "Type": "GameObject",
+              "IdValue": "f7c25223-1ca5-4076-9d06-aa3c3c46f4a1"
+            },
+            "NewContainerProperty": "Components",
+            "IsNewContainerArray": true,
+            "NewPreviousElement": {
+              "Type": "Component",
+              "IdValue": "e7771e39-e4f6-4261-82ef-d93af438ef51"
+            }
+          }
+        ]
+      },
+      "__PrefabIdToInstanceId": {
+        "f7c25223-1ca5-4076-9d06-aa3c3c46f4a1": "bb399cad-7f2a-4b51-809e-82998c01e54a",
+        "5b253708-de7c-4c86-8893-b86fb4822642": "52fa2ac8-7608-486c-b8ee-3febd2ac3856",
+        "c167e62e-6407-4edf-9ac5-dffe5f0688c1": "42dd036d-fb49-4329-888e-df4e80fd6350",
+        "49109783-18b2-44e7-8f29-0dcddd0a6da9": "4c15b1fc-1c87-4098-a513-f9e0f6d5363e",
+        "b1260496-0fea-43a7-a741-411cdc0108bc": "b88c1746-da4e-4079-988c-7647105b04aa",
+        "c82d52b1-a9e2-4e71-9bbe-496694888959": "273dd643-3900-4958-b6d4-9d67daebc312",
+        "83a62c25-6c75-4ee0-abb7-7d7f1d033fe6": "13167e73-cba0-452e-8cd5-d9036b65d3c5",
+        "c041252e-1262-42a4-b630-c032cce27ace": "f29c5d15-d305-4c6a-bee3-5c5ca3fd0079",
+        "2d5f9694-5062-485f-9ea2-0ca6c18d167d": "f637e694-9d4d-44dc-92b6-c63ed03249b1",
+        "18c6af28-d7f2-4ee1-9369-b6e74775b935": "e06359eb-045e-49e9-aa47-d4c749a07e82",
+        "91ab47da-c178-479c-8af6-c7515eba5759": "c67a52ed-abaa-4ba3-a0ac-4430c2d02415",
+        "fec41e74-67b6-4ce4-9d93-31e46c97da45": "3c5367bf-c8bc-422c-93e6-1bb27bfd5f0a",
+        "e3523077-dc7e-4d0a-a45f-e8598919832a": "1bee5193-aa5d-4036-888b-089fcc6f6ec5",
+        "9d66ab60-1204-429a-9ac6-5a2af9b6c4b9": "9b9330cc-fe6f-42d5-8485-8dedccb606d1",
+        "100d9f09-2c5b-41ea-a4d6-e73e2e7a7474": "c951c8eb-3cc7-4d8d-a048-716ad4f4b36f",
+        "19d65ae4-28c5-47b5-80fc-8240b0d78368": "b8528c78-416e-48e2-a46e-0785dbb57416",
+        "b4e7cb1e-f2aa-4667-aec1-945f77b57a25": "1abcc35d-691c-45f2-acbd-303768e73971",
+        "45305a9c-ebba-480b-b65c-a573a56843ae": "fb303c49-e230-4cf4-96aa-d88af6ed9978",
+        "ea635d1f-635b-48d4-9e6b-92c52aa96a0b": "ee8fa9f6-b4bb-4863-9d26-bb76c9224dab",
+        "eb59db6f-2e1b-4290-8ea3-98f00b7ad4bc": "be3065ff-284c-42ff-ade5-70b0786f250e",
+        "6f8c1e1b-00f3-4ad6-a2d3-f73657da9d04": "56ba2d89-80f9-49a7-8112-6ecbe1802375",
+        "1d13bb54-0bc7-486f-ba05-50fc059aab8a": "9afd51fd-18e4-4a7a-9794-4d2ea44db592",
+        "bdd00ce5-fc14-432b-9f34-eb55f85aca40": "5b0e4f91-f87d-4bf3-bee6-320029a4224f",
+        "9b3f9359-1a40-46a8-8c1f-52dfbf3e0150": "03ed6ace-83aa-4cce-880d-196e2a5a8877",
+        "ea6ec2aa-0c1b-44ba-bce1-5529320cd815": "f4d47031-656f-42e7-a206-d7a6a8ac8c55",
+        "503695f8-ae28-4816-b3ed-c37017a9b847": "53996865-06f0-4e36-8c79-45c50e091d98",
+        "97a813f1-1d8c-4c6e-8ab9-3c8221ac7dbd": "ee75a376-7064-4e7b-b073-2b9044ae3ac2",
+        "4c82737a-111e-4745-aa9f-7e36ff9cbb36": "305b9017-9d3c-40f0-bb8b-5e221639ba1a",
+        "188025de-1b23-4cc9-a89f-dcbc112f8a8a": "32040158-41d6-41c8-a532-69ad9b9a957a",
+        "46d6ff07-4596-4f6f-9f01-51568736df65": "3b064f61-ff40-40d8-a880-5f6e41eef7ff",
+        "e49a0ef0-42e0-4da2-86bd-97f062161e3d": "13874ac5-5f45-4059-b271-1a0c305d6218",
+        "c8b726ed-51d8-42ef-a8a5-973fb6eecd55": "de4c3cd5-0d49-4b02-9475-c25323a6e737",
+        "3b615d8e-5bb8-4652-8f25-6441adb0d684": "de7c2fd1-8e09-4dfd-990d-d94b2e47b831",
+        "73c32974-c759-440d-80bb-eb65411f3508": "aa9d1746-8461-4e95-a192-c9fe36ff467e",
+        "39bfe2ad-98a5-4fc8-aab8-cbc29f1ffd05": "19721261-1a0f-41fb-9ee4-fd45a0a3a6e0",
+        "196af5b3-533e-47f7-b9ce-3fbfcd6860cb": "53e32a0b-f01b-47e7-8bc9-e46c4df8ead5",
+        "eb15b2f6-b2a6-48a1-8439-b3383fefc746": "93d652df-31d0-4f4a-9c29-49198fa07ef2",
+        "879c4006-f472-4c34-972d-7778361d9b3e": "91bdded3-c84b-47ae-ac37-abcc56505adc",
+        "020a8d1e-fc64-4a6a-b8ab-9797113f26a2": "5fb1201b-3744-4b74-b1e6-41cb03d682cf",
+        "51495847-64a3-463e-8145-a8992dae1ec2": "6c23834c-ffbf-4e42-8143-f68da6346a0d",
+        "22f62d20-a0d2-4ab3-b282-aac29691fc99": "3cc6333f-6c9e-41fb-9a7b-ff4a90fcf04d",
+        "1fd1898f-a9bb-42d0-9e1c-3bf36e9a98ef": "c937ccd5-2546-4228-a146-26e309d78d84",
+        "8e4fef47-033e-4a13-a3c8-7d2e4f18365f": "ef1b0631-e3f0-43a6-b871-251ef3a4949a",
+        "1ef5a15e-79c1-4571-bcf3-4d923760cc0e": "863cdf10-1a37-4c3c-8a16-3952ea7e89a6",
+        "cc2b3a78-7da1-44f0-8e8b-e5581f8096e9": "12789b4b-ed63-4342-8024-1997ed56008c",
+        "8ec842f2-cfc7-41de-81a1-9b2dfe5302f4": "ad5683b5-b053-488a-aa39-20095643db61",
+        "5c407fa4-4734-428b-8317-26d0efc269bd": "be771732-88b5-4487-a979-7ceb493f2763",
+        "2a579962-863e-419a-92a3-bffcbdeac43c": "f7efa3c3-e940-4355-91c6-3f4be8eb7e33",
+        "871b8e76-31c0-437f-a365-b9e7032abbd2": "2f91f0e8-2e91-47b3-a71d-f8dacb7beea7",
+        "afed815e-6a51-4e66-b94c-3bda199ea631": "a42516a9-016a-4565-bf7e-8b106425cef6",
+        "a611e014-1844-472b-b1b2-d35d21b56eef": "c5662bcc-a6d6-46e2-a199-0963061b5b1f",
+        "ea1adeea-9fa1-4666-ab56-e0e0c00e58cb": "d5f66bb6-4512-4ac2-b54f-fcf03e4085d9",
+        "c8e58e7e-5e12-4067-8053-4f7bd98fb9f3": "642fea4c-da95-437d-82e3-dabcd57eb1ce",
+        "0b8d88b7-2fa4-4405-8896-36a411363e3a": "53fba8f8-2a14-4eb5-9dd4-4df71ed14d09",
+        "00d323b8-6637-4615-bf9c-4acefc31c448": "6447f4b0-be86-43bc-93dd-0b503911001d",
+        "4d013707-b969-48aa-9b32-3ec46ecb8977": "76d8f92b-4ba2-4d95-a43a-675ab9d58b30",
+        "5356112e-1fb8-47aa-820f-0dbbf60caeed": "1ebe2814-bc74-4fc5-83c7-52467c4d54d3",
+        "45a9b96f-c3ca-4120-81cc-909eb2aa4111": "d70c635b-3665-4423-b55b-f7f06bc853fa",
+        "04dbb62e-024d-49a5-8406-a82525261799": "34f22a83-5045-421d-acc8-9573e08781a4",
+        "307b4c84-f018-4384-87e3-0c43ed3659e7": "68a71feb-6223-476c-ab02-ddffe00522ee",
+        "41dcf6fc-64e0-406a-badf-6b879c370c0b": "1540995d-18a1-4dc1-be77-cf94bbd222e3",
+        "fa9131b6-22be-4312-ae77-e3e7da7a7cf9": "0746adac-fe75-4a95-ab55-aaeeaf1f9cc8",
+        "a3c71da9-fdac-4273-85cb-06f10444a501": "d6fad80d-bf7d-402a-81b8-4c6a32c1ae31",
+        "1b9c9d4a-e513-4025-8ba4-8975bf498b6f": "91651414-3967-4d89-92db-2cddd1af208e",
+        "470a668e-f7be-471b-adb7-b92686430ad2": "8d7dda1e-9341-43e4-8969-7f9b7640714f",
+        "ef00cd8e-0e42-45d1-99d3-9db06a912677": "a3edcb53-be0c-47cd-8a33-2bf0eebc347f",
+        "dd670bdb-d28d-4c3a-860d-51bdba991934": "48c37d13-d002-4ae0-8479-99bc137bc8e5",
+        "9b9b18a7-d286-40d8-b3af-8e957af2b900": "bea1927d-cb00-4504-9d3e-170df1cddfaf",
+        "e202fa43-68f7-4d19-8046-f39ed2edd444": "383c9425-cfb8-4978-bdf2-40c22821df26",
+        "45d2f9c1-e34d-4756-807d-b5197dfc0e92": "96c33bd9-105d-49fc-b69c-2efe74599b07",
+        "35f22135-8476-417b-b33c-fea8b2524a75": "3d8c376a-60d8-4d31-b4eb-ef6f168fb816",
+        "ec32f16b-5053-4522-8948-4eaef65a809a": "41976cbd-4c88-4dc2-9691-6e10b5c409a7",
+        "7e1e5a0a-7cef-4388-aa2f-44ac5088662e": "3535933b-962f-46f3-ae03-dd08c552dbc0",
+        "49fc0437-6e51-4ea0-9057-09e41e1b1c77": "bc055807-3659-473d-99ad-9bd59a73de98"
+      }
+    },
+    {
+      "__guid": "5454737a-48a4-4521-ae91-becbe6d165e9",
+      "__version": 2,
+      "__Prefab": "scenes/maps/defusemap_01/game_setup.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "d0c8d522-0524-4dbb-92a9-04b45bf7d1c7"
+            },
+            "Property": "Position",
+            "Value": "-160,63.99999,1.999998"
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "d0c8d522-0524-4dbb-92a9-04b45bf7d1c7": "5454737a-48a4-4521-ae91-becbe6d165e9",
+        "69d5003a-44d7-41fe-a620-32f6bf0c4cd0": "13fb0c06-f117-47a3-80db-87fe7517311f",
+        "49ccfd38-c5e1-45fd-aa44-5efbadaa0577": "80e8906a-5aee-48fb-af0e-85fab9f472fb",
+        "20c78d91-5ca6-442a-a6b5-ab8b1602e80f": "c58afc59-794c-404f-97d0-41d55a8795b3",
+        "d5595acd-b863-410f-8172-dd5551b1e049": "6ebb2045-2604-436b-9d49-c20fe862ee71",
+        "6a983fb1-0d55-435e-8fcb-732b1ea27724": "ff0c121c-dcd1-4200-8125-835f1353a46f",
+        "1812ebb9-9d7f-42c7-9a1b-cc7e3cc08b66": "f3605576-e535-4ad4-b16d-a4e7900bf924",
+        "58807d92-54d1-46b8-8cb5-b611520f2ede": "ad000947-df2e-44d2-9179-eb25ba3a7852",
+        "a90ee9f3-b357-4eb5-9dd4-415402592b57": "a743f430-d14e-489f-8d26-56dbb08b3c4c",
+        "1fbe1885-c54f-4870-916f-05a56271e8fd": "c1773265-f33f-4e3c-91a8-e64f62033b4b",
+        "843ab22f-5541-4fb8-bc8c-759f41e35140": "036442a8-38bc-4b01-85e6-cec19cc844ab",
+        "89e9bfbf-5479-448a-be07-24914e1c82c3": "9326cc3c-6ade-4fd0-b93e-65c38e3d6244",
+        "05ddf668-2a23-425d-80a9-2fbd99aebd3c": "4bba9a0e-a398-4e60-9098-967e8fa1edf2",
+        "71b39898-e489-4c21-85a1-7d37b7aeec54": "56b1741e-b973-4709-8732-e5f46e376034",
+        "95a4c168-2c12-41b9-8496-7737babe56ef": "0d926ee0-6b85-44b0-92a5-4fa1716b2479",
+        "12c896c3-9c7f-432c-b611-5235bc0b256d": "87aa8a0f-e52b-4966-8252-207654913e0e",
+        "705ab2e0-5402-4947-8a33-bcf05f4e4048": "696a5461-021b-4af5-9c83-fe41c8c51a41",
+        "5a78ef35-8400-4326-bd0e-e5073d2bcba3": "53facd42-9a10-415b-b5e5-c858f2312799",
+        "9a4ca0dc-a7e9-466c-8bd6-ad5fab460ce9": "2ac5d470-11a1-4369-a511-a71c90b206d4",
+        "7a4dcb57-1bdf-41df-8ae3-2089c598fdef": "14585ab0-83fc-435b-94f1-fd234ec86b09",
+        "197c4584-e218-4ca6-bf89-c681d85dde64": "64f71448-78ba-4085-a4dd-9d145798818b",
+        "181fcfdf-894c-4f8d-909c-198a6ce025ab": "3b6d85ad-506d-414c-a9f9-21c55028e91c",
+        "ab3d0a25-9952-4038-af53-1686d287eb5d": "5607a83b-b779-4448-84bd-347eadf6bee9",
+        "0c0279e4-5ed6-474c-bd2a-7884a4d68b4b": "02e2ef59-9dd3-4fe0-ae48-ad405410280d",
+        "277c324d-4d24-4dcf-9d9c-5f7dc9051932": "6f733344-ef8b-457f-904b-f6a23c4595e5",
+        "a0ca5a0f-4af9-416f-8308-bb7fa5dfb8f7": "688af5e7-fdc0-4c4d-a486-82bf047e6a3d",
+        "62e7124f-7d96-4d4a-b3ba-4c0ef58f6b4a": "8b33a685-e2df-407b-91f8-3cd27ce38cff",
+        "3951a691-bb25-49f8-9a58-e276f08222cf": "7e0053c1-c16f-46a6-b388-1f4b7a5893f7",
+        "91d5d71c-7576-48cb-8996-eb3c468aaf59": "ce8c64da-3be6-43bb-aac1-e5ed954b75c2",
+        "b4ca6d36-f647-49b3-9151-8ef4c63aeddd": "fe2161e5-285e-4a17-96d4-8f772d8b8317",
+        "50de49ef-0287-435d-b570-e48047718014": "ec11469d-7277-4c55-94be-54fc37fb35db",
+        "4dc414cd-ed6d-4fcd-bd26-0c4c340b5301": "374405c6-ea6c-4efa-b4e4-c0f0ece618e5",
+        "cd758b57-adde-4489-8b9c-9cdb9b96cb45": "0a343781-2c2e-456c-ae44-14b769a1b923"
+      }
+    },
+    {
+      "__guid": "ca73e253-de5a-4744-97c2-649cd6389a82",
+      "__version": 2,
+      "Flags": 0,
+      "Name": "2D Skybox",
+      "Position": "0,0,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "skybox",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkFlags": 0,
+      "NetworkOrphaned": 0,
+      "NetworkTransmit": true,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.SkyBox2D",
+          "__guid": "17ca46ec-7577-4c57-bf50-a49c870540ac",
+          "__enabled": true,
+          "Flags": 0,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "SkyIndirectLighting": true,
+          "SkyMaterial": "materials/sky/atmosphere_sky.vmat",
+          "Tint": "1,1,1,1"
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "84e8233c-3304-4599-976f-067712d48b33",
+      "__version": 2,
+      "Flags": 0,
+      "Name": "Sun",
+      "Position": "-209.3496,133.468,69.33291",
+      "Rotation": "0.07304409,0.4341696,-0.1081741,0.8913248",
+      "Scale": "1,1,1",
+      "Tags": "light_directional,light",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkFlags": 0,
+      "NetworkOrphaned": 0,
+      "NetworkTransmit": true,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.DirectionalLight",
+          "__guid": "3d34612b-bd2e-41ab-8a85-efa3f9856b8d",
+          "__enabled": true,
+          "Flags": 0,
+          "FogMode": "Enabled",
+          "FogStrength": 1,
+          "LightColor": "1,0.9476,0.75814,1",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Shadows": true,
+          "SkyColor": "0.09767,0.09767,0.09767,1"
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "fc98993a-4806-44ef-a8e8-846a43c4822b",
+      "__version": 2,
+      "Flags": 0,
+      "Name": "Box",
+      "Position": "183.5545,-1983.14,-64",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkFlags": 0,
+      "NetworkOrphaned": 0,
+      "NetworkTransmit": true,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.MeshComponent",
+          "__guid": "9d03a834-367d-4faf-877c-24bee34eb011",
+          "__enabled": true,
+          "Flags": 0,
+          "ColliderFlags": 0,
+          "Collision": "Mesh",
+          "Color": "1,1,1,1",
+          "Elasticity": null,
+          "Friction": null,
+          "HideInGame": false,
+          "IsTrigger": false,
+          "Mesh": {
+            "Topology": "H4sIAAAAAAAACl2QCQ7CMAwEp4Qj3NBy/f+laMRGsohUVbFn1+t04ANs+Z0VsM69AwfgBFyAKZ9MPXdgk3qLnsI+Um/h/me9i2ZXfFvYOazafTJN0XRgKZmPyWtfXvYVL73PZRd52WdYPa7xtC8veys7u6t17/7t6Tn0ZtFjvIXZR895zjKjPWf4NiOrGt+ivpXZ3XnozaOndVn9vvVkkTjEAQAA",
+            "Position": "183.5545,-1983.14,-64",
+            "Rotation": "0,0,0,1",
+            "Positions": [
+              "-1975.554,-2417.594,64",
+              "1075.765,-2417.594,64",
+              "1075.765,2417.594,64",
+              "-1975.554,2417.594,64",
+              "-1975.554,2417.594,-64",
+              "1075.765,2417.594,-64",
+              "1075.765,-2417.594,-64",
+              "-1975.554,-2417.594,-64"
+            ],
+            "TextureCoord": [
+              "8.404414,18.88745",
+              "-15.43402,-0.5",
+              "8.404414,-18.88745",
+              "-18.88745,-0.5",
+              "-15.43402,-18.88745",
+              "-8.404414,-0.5",
+              "-15.43402,18.88745",
+              "-18.88745,-0.5",
+              "8.404414,-18.88745",
+              "15.43402,0.5",
+              "8.404414,18.88745",
+              "18.88745,0.5",
+              "-15.43402,18.88745",
+              "8.404414,0.5",
+              "-15.43402,-18.88745",
+              "18.88745,0.5",
+              "18.88745,-0.5",
+              "-15.43402,0.5",
+              "-18.88745,0.5",
+              "15.43402,-0.5",
+              "-18.88745,0.5",
+              "8.404414,-0.5",
+              "18.88745,-0.5",
+              "-8.404414,0.5"
+            ],
+            "TextureUAxis": [
+              "1,0,0",
+              "1,0,-0",
+              "0,-1,0",
+              "0,1,0",
+              "-1,0,0",
+              "1,-0,0"
+            ],
+            "TextureVAxis": [
+              "0,-1,0",
+              "0,-1,0",
+              "0,0,-1",
+              "-0,0,-1",
+              "0,0,-1",
+              "-0,0,-1"
+            ],
+            "TextureScale": [
+              "0.2499999,0.2500001",
+              "0.2499999,0.2500001",
+              "0.2500001,0.25",
+              "0.2500001,0.25",
+              "0.25,0.25",
+              "0.25,0.25"
+            ],
+            "TextureOffset": [
+              "289.7812,259.4424",
+              "289.7812,259.4415",
+              "259.4415,256",
+              "252.5585,256",
+              "222.2188,256",
+              "289.7812,256"
+            ],
+            "MaterialIndex": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "EdgeFlags": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Materials": [
+              "materials/dev/reflectivity_30.vmat"
+            ]
+          },
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "RenderType": "Off",
+          "RollingResistance": null,
+          "SmoothingAngle": 40,
+          "Static": true,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "b0ff9e5a-47c8-487c-be23-e70128fec97f",
+      "__version": 2,
+      "Flags": 0,
+      "Name": "Team Spawn Point",
+      "Position": "44.42921,159.1817,-0.756134",
+      "Rotation": "0,0,0.2708041,0.9626345",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkFlags": 0,
+      "NetworkOrphaned": 0,
+      "NetworkTransmit": true,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "TeamSpawnPoint",
+          "__guid": "03bb1e09-8ab2-47ad-abfd-e1a6bf430f64",
+          "__enabled": true,
+          "Flags": 0,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Team": "CounterTerrorist"
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "3361bddb-0e9f-4cb4-aa64-c166d5e16525",
+      "__version": 2,
+      "Flags": 0,
+      "Name": "Team Spawn Point 2",
+      "Position": "143.4684,189.1904,0.1045954",
+      "Rotation": "0,0,0.9817031,-0.1904177",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkFlags": 0,
+      "NetworkOrphaned": 0,
+      "NetworkTransmit": true,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "TeamSpawnPoint",
+          "__guid": "fa353fe6-b304-40d1-aac0-f9ac0b06da0a",
+          "__enabled": true,
+          "Flags": 0,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Team": "Terrorist"
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "32907b64-683f-43ac-a630-e370f014d11e",
+      "__version": 2,
+      "Flags": 0,
+      "Name": "Block",
+      "Position": "11.57324,-516.8547,63.99532",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkFlags": 0,
+      "NetworkOrphaned": 0,
+      "NetworkTransmit": true,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.MeshComponent",
+          "__guid": "a695fad4-6ca1-492d-b55a-186c7af7f7c1",
+          "__enabled": true,
+          "Flags": 0,
+          "ColliderFlags": 0,
+          "Collision": "Mesh",
+          "Color": "1,1,1,1",
+          "Elasticity": null,
+          "Friction": null,
+          "HideInGame": false,
+          "IsTrigger": false,
+          "Mesh": {
+            "Topology": "H4sIAAAAAAAACl2QCQ7CMAwEp4Qj3NBy/f+laMRGsohUVbFn1+t04ANs+Z0VsM69AwfgBFyAKZ9MPXdgk3qLnsI+Um/h/me9i2ZXfFvYOazafTJN0XRgKZmPyWtfXvYVL73PZRd52WdYPa7xtC8veys7u6t17/7t6Tn0ZtFjvIXZR895zjKjPWf4NiOrGt+ivpXZ3XnozaOndVn9vvVkkTjEAQAA",
+            "Position": "11.57324,-516.8547,63.99532",
+            "Rotation": "0,0,0,1",
+            "Positions": [
+              "-219.6613,-17.39081,64",
+              "219.6613,-17.39081,64",
+              "219.6613,17.39087,64",
+              "-219.6613,17.39087,64",
+              "-219.6613,17.39087,-64",
+              "219.6613,17.39087,-64",
+              "219.6613,-17.39081,-64",
+              "-219.6613,-17.39081,-64"
+            ],
+            "TextureCoord": [
+              "1.80652,4.173793",
+              "-1.625688,-0.9999634",
+              "1.80652,3.902061",
+              "-4.173793,-0.9999634",
+              "-1.625688,3.902061",
+              "-1.80652,-0.9999634",
+              "-1.625688,4.173793",
+              "3.902061,-0.9999634",
+              "1.80652,3.902061",
+              "1.625688,0.00003653765",
+              "1.80652,4.173793",
+              "-3.902061,0.00003653765",
+              "-1.625688,4.173793",
+              "1.80652,0.00003653765",
+              "-1.625688,3.902061",
+              "4.173793,0.00003653765",
+              "4.173793,-0.9999634",
+              "-1.625688,0.00003653765",
+              "3.902061,0.00003653765",
+              "1.625688,-0.9999634",
+              "-4.173793,0.00003653765",
+              "1.80652,-0.9999634",
+              "-3.902061,-0.9999634",
+              "-1.80652,0.00003653765"
+            ],
+            "TextureUAxis": [
+              "1,0,0",
+              "1,0,-0",
+              "0,-1,0",
+              "0,1,0",
+              "-1,0,0",
+              "1,-0,0"
+            ],
+            "TextureVAxis": [
+              "0,-1,0",
+              "0,-1,0",
+              "0,0,-1",
+              "-0,0,-1",
+              "0,0,-1",
+              "-0,0,-1"
+            ],
+            "TextureScale": [
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25"
+            ],
+            "TextureOffset": [
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0"
+            ],
+            "MaterialIndex": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "EdgeFlags": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Materials": [
+              "materials/dev/reflectivity_30.vmat"
+            ]
+          },
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "RenderType": "On",
+          "RollingResistance": null,
+          "SmoothingAngle": 40,
+          "Static": true,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "7d5ac09c-a4b9-4753-a104-300a436e7742",
+      "__version": 2,
+      "Flags": 0,
+      "Name": "tv",
+      "Position": "120.1868,125.7508,0.01870422",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkFlags": 0,
+      "NetworkOrphaned": 0,
+      "NetworkTransmit": true,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "bf58e3e9-d0c3-4e93-8bd1-733f56ace0c9",
+          "__enabled": true,
+          "Flags": 0,
+          "BodyGroups": 18446744073709551615,
+          "Health": 15,
+          "IsStatic": false,
+          "MaterialGroup": null,
+          "Model": "models/sbox_props/tv/tv.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnPropBreak": null,
+          "OnPropTakeDamage": null,
+          "StartAsleep": false,
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "777b8207-ffa5-4469-a462-1cf55c988196",
+          "__enabled": true,
+          "Flags": 0,
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "LodOverride": null,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Materials": null,
+          "Model": "models/sbox_props/tv/tv.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.ModelCollider",
+          "__guid": "6fca29f4-d808-49fc-ac59-74889e15acdc",
+          "__enabled": true,
+          "Flags": 0,
+          "ColliderFlags": 0,
+          "Elasticity": null,
+          "Friction": null,
+          "IsTrigger": false,
+          "Model": "models/sbox_props/tv/tv.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "RollingResistance": null,
+          "Static": false,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
+        },
+        {
+          "__type": "Sandbox.Rigidbody",
+          "__guid": "7a7184f5-4beb-4fcd-9e7e-9dbb1eb8362a",
+          "__enabled": true,
+          "Flags": 0,
+          "AngularDamping": 0,
+          "EnableImpactDamage": true,
+          "EnhancedCcd": false,
+          "Gravity": true,
+          "GravityScale": 1,
+          "ImpactDamage": 15,
+          "LinearDamping": 0,
+          "Locking": {
+            "X": false,
+            "Y": false,
+            "Z": false,
+            "Pitch": false,
+            "Yaw": false,
+            "Roll": false
+          },
+          "MassCenterOverride": "0,0,0",
+          "MassOverride": 20,
+          "MinImpactDamageSpeed": 600,
+          "MotionEnabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OverrideMassCenter": false,
+          "RigidbodyFlags": 0,
+          "StartAsleep": false
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "47f8a592-9ec3-44b5-92ad-77184c32ed7a",
+      "__version": 2,
+      "Flags": 0,
+      "Name": "oil_drum_explosive",
+      "Position": "17.70355,62.51065,0.03189008",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkFlags": 0,
+      "NetworkOrphaned": 0,
+      "NetworkTransmit": true,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "202e5bc7-7cc3-464f-a50d-92c4794e77c5",
+          "__enabled": true,
+          "Flags": 0,
+          "BodyGroups": 18446744073709551615,
+          "Health": 100,
+          "IsStatic": false,
+          "MaterialGroup": null,
+          "Model": "models/sbox_props/oil_drum/oil_drum_explosive.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnPropBreak": null,
+          "OnPropTakeDamage": null,
+          "StartAsleep": false,
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "a1fea57e-3293-4c18-9e5d-81a2aab6ab0f",
+          "__enabled": true,
+          "Flags": 0,
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "LodOverride": null,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Materials": null,
+          "Model": "models/sbox_props/oil_drum/oil_drum_explosive.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.ModelCollider",
+          "__guid": "b416650f-d3ef-4026-b8eb-130978d370bd",
+          "__enabled": true,
+          "Flags": 0,
+          "ColliderFlags": 0,
+          "Elasticity": null,
+          "Friction": null,
+          "IsTrigger": false,
+          "Model": "models/sbox_props/oil_drum/oil_drum_explosive.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "RollingResistance": null,
+          "Static": false,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
+        },
+        {
+          "__type": "Sandbox.Rigidbody",
+          "__guid": "62799dc0-7281-4071-ae79-e74fcc1c5201",
+          "__enabled": true,
+          "Flags": 0,
+          "AngularDamping": 0,
+          "EnableImpactDamage": true,
+          "EnhancedCcd": false,
+          "Gravity": true,
+          "GravityScale": 1,
+          "ImpactDamage": 100,
+          "LinearDamping": 0,
+          "Locking": {
+            "X": false,
+            "Y": false,
+            "Z": false,
+            "Pitch": false,
+            "Yaw": false,
+            "Roll": false
+          },
+          "MassCenterOverride": "0,0,0",
+          "MassOverride": 80,
+          "MinImpactDamageSpeed": 1200,
+          "MotionEnabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OverrideMassCenter": false,
+          "RigidbodyFlags": "DisableCollisionSounds",
+          "StartAsleep": false
+        },
+        {
+          "__type": "Tec.PropExploder",
+          "__guid": "9f33004a-3371-440a-a74b-72b4148ce482",
+          "__enabled": true,
+          "Flags": 0,
+          "damageMultiplier": 3,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
+        },
+        {
+          "__type": "Tec.Exploder",
+          "__guid": "2903de28-9f61-4206-b658-231a5043ce67",
+          "__enabled": true,
+          "Flags": 0,
+          "DamageFalloff": [
+            {
+              "x": 1,
+              "y": 1,
+              "in": 0,
+              "out": 0,
+              "mode": "Mirrored"
+            },
+            {
+              "x": 0,
+              "y": 0,
+              "in": 0,
+              "out": 0,
+              "mode": "Mirrored"
+            }
+          ],
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "ScreenShakeIntensity": 3,
+          "ScreenShakeLifeTime": 1.5
+        }
+      ],
+      "Children": []
+    }
+  ],
+  "SceneProperties": {
+    "NetworkInterpolation": true,
+    "TimeScale": 1,
+    "WantsSystemScene": true,
+    "Metadata": {
+      "Title": "minimal"
+    },
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": false,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
+  "ResourceVersion": 3,
+  "Title": "minimal",
+  "Description": null,
+  "__references": [
+    "facepunch.oildrumexplosive#143819",
+    "facepunch.tv#143951"
+  ],
+  "__version": 3
+}

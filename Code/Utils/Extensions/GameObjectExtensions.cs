@@ -22,6 +22,11 @@ public static partial class GameObjectExtensions
 		{
 			damageable.TakeDamage( damageInfo );
 		}
+		
+		foreach ( var damageable in go.Root.GetComponents<Prop>() )
+		{
+			damageable.OnDamage( Tec.Utils.CreateDamageInfo(damageInfo) );
+		}
 	}
 
 	public static void CopyPropertiesTo( this Component src, Component dst )
