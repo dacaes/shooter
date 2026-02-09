@@ -8,7 +8,7 @@ namespace Facepunch;
 /// <summary>
 /// A health component for any kind of GameObject.
 /// </summary>
-public partial class HealthComponent : Component, IRespawnable
+public partial class HealthComponent : Component, IRespawnable//, Component.IDamageable
 {
 	/// <summary>
 	/// Are we in god mode?
@@ -67,6 +67,11 @@ public partial class HealthComponent : Component, IRespawnable
 		Health = MaxHealth;
 	}
 
+	// public void OnDamage( in Sandbox.DamageInfo damage )
+	// {
+	// 	TakeDamage( Tec.Utils.CreateDamageInfo( damage ) );
+	// }
+	
 	public void TakeDamage( DamageInfo damageInfo )
 	{
 		Assert.True( Networking.IsHost );

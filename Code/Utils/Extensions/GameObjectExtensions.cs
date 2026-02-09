@@ -17,6 +17,11 @@ public static partial class GameObjectExtensions
 			Log.Warning( $"Tried to run TakeDamage on {go}, but we're not the host." );
 			return;
 		}
+		
+		// foreach ( var damageable in go.Root.GetComponents<Component.IDamageable>() )
+		// {
+		// 	damageable.OnDamage( Tec.Utils.CreateDamageInfo(damageInfo));
+		// }
 
 		foreach ( var damageable in go.Root.GetComponents<HealthComponent>() )
 		{
