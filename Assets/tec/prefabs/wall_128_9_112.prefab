@@ -3,11 +3,11 @@
     "__guid": "de1d2dea-48d6-4963-8a22-7fabbf056efb",
     "__version": 2,
     "Flags": 0,
-    "Name": "Wall_128_9_112",
+    "Name": "wall_128_9_112",
     "Position": "0,0,0",
     "Rotation": "0,0,0,1",
     "Scale": "1,1,1",
-    "Tags": "",
+    "Tags": "map",
     "Enabled": true,
     "NetworkMode": 2,
     "NetworkFlags": 0,
@@ -156,7 +156,26 @@
         "SurfaceVelocity": "0,0,0"
       }
     ],
-    "Children": []
+    "Children": [],
+    "__properties": {
+      "NetworkInterpolation": true,
+      "TimeScale": 1,
+      "WantsSystemScene": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": false,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    },
+    "__variables": []
   },
   "ResourceVersion": 2,
   "ShowInMenu": false,

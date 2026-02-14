@@ -24,7 +24,7 @@
         "Position": "-21.99997,-4.500427,56.00509",
         "Rotation": "0,0,0,1",
         "Scale": "1,1,1",
-        "Tags": "",
+        "Tags": "map",
         "Enabled": true,
         "NetworkMode": 2,
         "NetworkFlags": 0,
@@ -183,7 +183,7 @@
         "Position": "-63.99997,-4.500427,98.99999",
         "Rotation": "0,0,0,1",
         "Scale": "1,1,1",
-        "Tags": "",
+        "Tags": "map",
         "Enabled": true,
         "NetworkMode": 2,
         "NetworkFlags": 0,
@@ -341,7 +341,7 @@
         "Position": "-106,-4.500427,56.00509",
         "Rotation": "0,0,0,1",
         "Scale": "1,1,1",
-        "Tags": "",
+        "Tags": "map",
         "Enabled": true,
         "NetworkMode": 2,
         "NetworkFlags": 0,
@@ -559,7 +559,7 @@
           {
             "__type": "Sandbox.ModelCollider",
             "__guid": "88129f77-09e8-4459-96de-2abb9772cf67",
-            "__enabled": true,
+            "__enabled": false,
             "Flags": 0,
             "ColliderFlags": 0,
             "Elasticity": null,
@@ -584,7 +584,7 @@
           {
             "__type": "Sandbox.Rigidbody",
             "__guid": "2a4ed47e-1011-4da1-9e0a-c7443d873e59",
-            "__enabled": true,
+            "__enabled": false,
             "Flags": 0,
             "AngularDamping": 0,
             "EnableImpactDamage": true,
@@ -685,7 +685,7 @@
           {
             "__type": "Sandbox.ModelCollider",
             "__guid": "f1b9cdfc-1637-42eb-b50b-75b49fb45675",
-            "__enabled": true,
+            "__enabled": false,
             "Flags": 0,
             "ColliderFlags": 0,
             "Elasticity": null,
@@ -710,7 +710,7 @@
           {
             "__type": "Sandbox.Rigidbody",
             "__guid": "0ca37f71-ab84-499d-878e-04a9d5555830",
-            "__enabled": true,
+            "__enabled": false,
             "Flags": 0,
             "AngularDamping": 0,
             "EnableImpactDamage": true,
@@ -775,6 +775,14 @@
               },
               "Property": "Scale",
               "Value": "0.8,0.82,0.8"
+            },
+            {
+              "Target": {
+                "Type": "GameObject",
+                "IdValue": "06c40250-1e5a-44ee-818f-ef139d0cf6f4"
+              },
+              "Property": "Tags",
+              "Value": "noblockaudio,map"
             },
             {
               "Target": {

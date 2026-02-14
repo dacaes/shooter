@@ -353,7 +353,7 @@
         "b4ca6d36-f647-49b3-9151-8ef4c63aeddd": "fe2161e5-285e-4a17-96d4-8f772d8b8317",
         "50de49ef-0287-435d-b570-e48047718014": "ec11469d-7277-4c55-94be-54fc37fb35db",
         "4dc414cd-ed6d-4fcd-bd26-0c4c340b5301": "374405c6-ea6c-4efa-b4e4-c0f0ece618e5",
-        "e19f91e3-5a8e-43e2-9af1-b41ccc8dfdd9": "b1b45fbd-812e-4695-bedb-44c3b6b44d08"
+        "31a7a9cd-2442-4809-ab68-229a4f7ce168": "fe51ce98-71c8-4dfc-8f55-fff3965d5f99"
       }
     },
     {
@@ -583,6 +583,43 @@
         }
       ],
       "Children": []
+    },
+    {
+      "__guid": "eb64fb3b-204d-4b92-ba6f-9f39fd73881b",
+      "__version": 2,
+      "__Prefab": "tec/prefabs/oil_drum_explosive.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "9db13473-29b3-44f2-9614-ac87380c5322"
+            },
+            "Property": "Name",
+            "Value": "oil_drum_explosive (3)"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "9db13473-29b3-44f2-9614-ac87380c5322"
+            },
+            "Property": "Position",
+            "Value": "-451,-434.5,-0.00009047519"
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "9db13473-29b3-44f2-9614-ac87380c5322": "eb64fb3b-204d-4b92-ba6f-9f39fd73881b",
+        "78c7b8a2-fdb9-425d-9159-03d33a4a19ed": "61113081-66b1-4ccf-9d0e-1ae704b39792",
+        "04f1396b-c280-4929-b32c-5784fb031d76": "e241507f-4c01-4706-8dc1-b96db96fc5f8",
+        "8eb0ff4f-caec-4234-ad31-9b5227687641": "1c8af484-3ecd-4c8d-a0b7-4438d5f68f1c",
+        "e32be1fe-5218-4e51-a4ab-ed4f58a70421": "94d41644-c304-4462-8934-c613c1d29719",
+        "0f066520-b898-4237-96f5-8c5540b10fee": "327213ab-7bb0-45d6-a541-a55501d71f42",
+        "e6fc3d1a-f3ea-457f-933b-edd0fa3c96c9": "ac3e2d93-f63b-4bf4-9c62-b1c1581ef959"
+      }
     },
     {
       "__guid": "b0ff9e5a-47c8-487c-be23-e70128fec97f",
@@ -4523,7 +4560,7 @@
           "OnInteract": {
             "__version": 9,
             "__guid": "b5ef8048-4904-4393-aaa5-4e07a3ff54c1",
-            "__changeId": 15,
+            "__changeId": 21,
             "UserData": {
               "Title": "On Interact",
               "ReferencedComponentTypes": []
@@ -4533,13 +4570,6 @@
               {
                 "Id": 0,
                 "Type": "input"
-              },
-              {
-                "Id": 2,
-                "Type": "scene.ref",
-                "UserData": {
-                  "Position": "96,60"
-                }
               },
               {
                 "Id": 3,
@@ -4558,6 +4588,13 @@
                 "UserData": {
                   "Position": "24,228"
                 }
+              },
+              {
+                "Id": 6,
+                "Type": "scene.ref",
+                "UserData": {
+                  "Position": "72,72"
+                }
               }
             ],
             "Links": [
@@ -4574,7 +4611,7 @@
                 "DstName": "position"
               },
               {
-                "SrcId": 2,
+                "SrcId": 6,
                 "SrcName": "_result",
                 "DstId": 3,
                 "DstName": "target"
@@ -4587,9 +4624,9 @@
               }
             ],
             "Defaults": {
-              "$2.gameobject": {
+              "$6.gameobject": {
                 "_type": "gameobject",
-                "prefab": "prefabs/engine/explosion_med.prefab"
+                "prefab": "tec/prefabs/explosion_med_tec.prefab"
               }
             }
           }
@@ -4617,6 +4654,236 @@
           "RollingResistance": null,
           "Scale": "50,50,50",
           "Static": true,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "9e25d85d-f859-495e-a3d6-3133d68d3df0",
+      "__version": 2,
+      "Flags": 0,
+      "Name": "Cube (2)",
+      "Position": "-338,-430.5,33.00003",
+      "Rotation": "0,0,0,1",
+      "Scale": "0.3432201,0.3432201,0.3432201",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkFlags": 0,
+      "NetworkOrphaned": 0,
+      "NetworkTransmit": true,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "c9033237-1d12-45b3-8f8e-b5efff031256",
+          "__enabled": true,
+          "Flags": 0,
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "LodOverride": null,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Materials": null,
+          "Model": "models/dev/box.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Tec.Interactable",
+          "__guid": "ecd2f62c-9ab1-49ba-819f-0b9e569d624d",
+          "__enabled": true,
+          "Flags": 0,
+          "CanInteract": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnInteract": {
+            "__version": 9,
+            "__guid": "b5f7151d-ae45-4bfe-86c7-8852a2eefd4d",
+            "__changeId": 21,
+            "UserData": {
+              "Title": "On Interact",
+              "ReferencedComponentTypes": []
+            },
+            "Variables": [],
+            "Nodes": [
+              {
+                "Id": 0,
+                "Type": "input"
+              },
+              {
+                "Id": 3,
+                "Type": "scene.clone",
+                "UserData": {
+                  "Position": "276,0"
+                }
+              },
+              {
+                "Id": 4,
+                "Type": "property",
+                "Properties": {
+                  "_name": "WorldPosition",
+                  "_type": "Sandbox.GameObject"
+                },
+                "UserData": {
+                  "Position": "24,228"
+                }
+              },
+              {
+                "Id": 6,
+                "Type": "scene.ref",
+                "UserData": {
+                  "Position": "72,72"
+                }
+              }
+            ],
+            "Links": [
+              {
+                "SrcId": 0,
+                "SrcName": "_signal",
+                "DstId": 3,
+                "DstName": "_signal"
+              },
+              {
+                "SrcId": 4,
+                "SrcName": "_result",
+                "DstId": 3,
+                "DstName": "position"
+              },
+              {
+                "SrcId": 6,
+                "SrcName": "_result",
+                "DstId": 3,
+                "DstName": "target"
+              },
+              {
+                "SrcId": 0,
+                "SrcName": "_target",
+                "DstId": 4,
+                "DstName": "_target"
+              }
+            ],
+            "Defaults": {
+              "$6.gameobject": {
+                "_type": "gameobject",
+                "prefab": "tec/prefabs/explosion_med_tec.prefab"
+              }
+            }
+          }
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "7cebb882-ea31-453e-9fd1-f94c240b47f2",
+          "__enabled": true,
+          "Flags": 0,
+          "Center": "0,0,0",
+          "ColliderFlags": 0,
+          "Elasticity": null,
+          "Friction": null,
+          "IsTrigger": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "RollingResistance": null,
+          "Scale": "50,50,50",
+          "Static": true,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "99ccb5ac-9598-47d8-8d5b-2c57c6913ae5",
+      "__version": 2,
+      "Flags": 0,
+      "Name": "BARRIER",
+      "Position": "-391,-443.5,0.00001633167",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,2.82648,3.322649",
+      "Tags": "map",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkFlags": 0,
+      "NetworkOrphaned": 0,
+      "NetworkTransmit": true,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "88231832-ca2f-4bc8-bd0a-02ca0ae397ea",
+          "__enabled": false,
+          "Flags": 0,
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "LodOverride": null,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Materials": null,
+          "Model": "models/dev/box.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "e5bf7613-498d-417c-91b3-824aa279b390",
+          "__enabled": true,
+          "Flags": 0,
+          "Center": "0,0,0",
+          "ColliderFlags": 0,
+          "Elasticity": null,
+          "Friction": null,
+          "IsTrigger": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "RollingResistance": null,
+          "Scale": "50,50,50",
+          "Static": false,
           "Surface": null,
           "SurfaceVelocity": "0,0,0"
         }
