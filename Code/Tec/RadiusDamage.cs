@@ -112,7 +112,7 @@ public sealed class RadiusDamage : Component
 		ApplyDamage(sphere, damage, damageFalloff, physicsForce, occlusion, null, null, ignore);
 	}
 	
-	public static void ApplyDamage( Sphere sphere, DamageInfo damage, Curve damageFalloff, float physicsForce = 1, bool occlusion = true, TagSet extraOcclusionTags = null, TagSet extraNotOcclusionTags = null, GameObject ignore = null )
+	public static void ApplyDamage( Sphere sphere, DamageInfo damage, Curve damageFalloff, float physicsForce = 1, bool occlusion = true, TagSet extraOccludingTags = null, TagSet extraNotOccludingTags = null, GameObject ignore = null )
 	{
 		var scene = Game.ActiveScene;
 		if ( !scene.IsValid() ) return;
@@ -121,9 +121,9 @@ public sealed class RadiusDamage : Component
 		var damageAmount = damage.Damage;
 		var objectsInArea = scene.FindInPhysics( sphere );
 
-		var occludedTags = extraOcclusionTags ?? new TagSet();
-		occludedTags.Add( "map" );
-		var losTrace = scene.Trace.WithAnyTags(occludedTags).WithoutTags( "trigger", "gib", "debris", "player" ).WithoutTags(extraNotOcclusionTags);
+		var occludingTags = extraOccludingTags ?? new TagSet();
+		occludingTags.Add( "map" );
+		var losTrace = scene.Trace.WithAnyTags(occludingTags).WithoutTags( "trigger", "gib", "debris", "player" ).WithoutTags(extraNotOccludingTags);
 
 		foreach ( var rb in objectsInArea.SelectMany( x => x.GetComponents<Rigidbody>() ).Distinct() )
 		{
