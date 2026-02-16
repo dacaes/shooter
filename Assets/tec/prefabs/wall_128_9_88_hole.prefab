@@ -3,7 +3,7 @@
     "__guid": "ba3b2126-efa6-4829-9d63-c379172d5fbf",
     "__version": 2,
     "Flags": 0,
-    "Name": "wall_128_9_88_Hole",
+    "Name": "wall_128_9_88_hole",
     "Position": "0,0,0",
     "Rotation": "0,0,0,1",
     "Scale": "1,1,1",
@@ -306,7 +306,63 @@
         "SurfaceVelocity": "0,0,0"
       }
     ],
-    "Children": []
+    "Children": [
+      {
+        "__guid": "b0402bee-a26e-4399-b64a-83525f2ca234",
+        "__version": 2,
+        "Flags": 0,
+        "Name": "navmesh link",
+        "Position": "0,0,0",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkFlags": 0,
+        "NetworkOrphaned": 0,
+        "NetworkTransmit": true,
+        "OwnerTransfer": 1,
+        "Components": [
+          {
+            "__type": "Tec.CrouchNavMeshLink",
+            "__guid": "f0e7aed2-378d-4070-ae09-08eb91e2be4a",
+            "__enabled": true,
+            "Flags": 0,
+            "Area": null,
+            "ConnectionRadius": 16,
+            "IsBiDirectional": true,
+            "LocalEndPosition": "-64.06313,-55.47136,0",
+            "LocalStartPosition": "-64.07273,47.70193,0",
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null
+          }
+        ],
+        "Children": []
+      }
+    ],
+    "__properties": {
+      "NetworkInterpolation": true,
+      "TimeScale": 1,
+      "WantsSystemScene": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": false,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    },
+    "__variables": []
   },
   "ResourceVersion": 2,
   "ShowInMenu": false,

@@ -758,7 +758,7 @@
                 "IdValue": "06c40250-1e5a-44ee-818f-ef139d0cf6f4"
               },
               "Property": "Position",
-              "Value": "-44.99986,-0.5001221,0.01016787"
+              "Value": "-44.99986,-2.000008,0.01016787"
             },
             {
               "Target": {
@@ -809,6 +809,48 @@
           "cb88b133-2d16-4209-b014-24bbf27fb8d0": "121dbf41-38d9-4b7a-9436-ef2752c341db",
           "5f4fcae3-9810-493c-bd5f-2d9d3a4fb20a": "3f935451-f499-4d3c-b191-15728005755e"
         }
+      },
+      {
+        "__guid": "373a1cd2-514c-4fb1-a059-6696f1acf63d",
+        "__version": 2,
+        "Flags": 0,
+        "Name": "navmeshdoor",
+        "Position": "0,0,0",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkFlags": 0,
+        "NetworkOrphaned": 0,
+        "NetworkTransmit": true,
+        "OwnerTransfer": 1,
+        "Components": [
+          {
+            "__type": "Tec.DoorNavMeshLink",
+            "__guid": "921640a7-c75e-4eec-8545-44360cd4fccf",
+            "__enabled": true,
+            "Flags": 0,
+            "Area": null,
+            "ConnectionRadius": 16,
+            "Door": {
+              "_type": "component",
+              "component_id": "a5d3af04-8f5d-4601-af8f-2dca9b460e6e",
+              "go": "a552185e-8efe-419e-89cf-972d8dc1c775",
+              "component_type": "Door"
+            },
+            "IsBiDirectional": true,
+            "LocalEndPosition": "-70,-45.77008,0",
+            "LocalStartPosition": "-70,34.17004,0",
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null
+          }
+        ],
+        "Children": []
       }
     ],
     "__properties": {

@@ -118,7 +118,8 @@ public partial class PlayerPawn : IGameEventHandler<WeaponShotEvent>
 
 	private void UpdateEyes()
 	{
-		if ( IsLocallyControlled )
+		// Run always so CrouchNavMeshLink makes bots to crouch.
+		// if ( IsLocallyControlled )
 		{
 			var eyeHeightOffset = GetEyeHeightOffset();
 
