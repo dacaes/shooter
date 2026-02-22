@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using Tec;
 
 namespace Facepunch;
 
@@ -42,13 +43,18 @@ public class BotPlayerController : Component, IBotController
 	[Property, JsonIgnore, ReadOnly]
 	public BotContext Context => _frameContext;
 
+	public bool testBool = false;
+
 	internal void UpdateBehaviors()
 	{
 		using var _ = Sandbox.Diagnostics.Performance.Scope( "HC1::UpdateBehaviors" );
 
 		// Build or reuse a context for this frame
 		if ( _frameContext == null || _frameContext.Controller != this )
+		{
+			testBool  = true;
 			_frameContext = new BotContext( this );
+		}
 
 		// Run perception only if interval has passed
 		if ( _timeSincePerception > _perceptionInterval )
@@ -60,10 +66,13 @@ public class BotPlayerController : Component, IBotController
 
 		// --- Score all behaviors using the same context ---
 		var scored = GetComponents<IBotBehavior>()
-			.Select( b => new { Behavior = b, Score = b.Score( _frameContext ) } )
+			.Select( b => (Behavior: b, Score: b.Score(_frameContext)))
 			.OrderByDescending( x => x.Score )
 			.ToList();
 
+		PrintScoredBehaviors( scored );
+		// Log.Info(scored);
+		
 		if ( scored.Count == 0 || scored[0].Score <= 0f )
 		{
 			_currentBehavior = null;
@@ -80,6 +89,7 @@ public class BotPlayerController : Component, IBotController
 			if ( topScore > currentScore )
 			{
 				_currentBehavior = topBehavior;
+				_currentBehavior.Initialize(this);
 			}
 		}
 
@@ -124,5 +134,27 @@ public class BotPlayerController : Component, IBotController
 	{
 		SyncNavAgentWithPhysics();
 		UpdateBehaviors();
+	}
+
+	/// <summary>
+	/// Useful to debug one bot behaviors.
+	/// </summary>
+	/// <param name="scored"></param>
+	private void PrintScoredBehaviors( List<(IBotBehavior Behavior, float Score)> scored)
+	{
+		float y = 20;
+		
+		foreach (var s in scored)
+		{
+			DebugOverlay.ScreenText(
+				new Vector2( 900, y ),
+				$"{s.Behavior.ToString()}:  {s.Score}",
+				14,
+				TextFlag.Left,
+				Color.Green,
+				0.1f
+			);
+			y += 20f;
+		}
 	}
 }

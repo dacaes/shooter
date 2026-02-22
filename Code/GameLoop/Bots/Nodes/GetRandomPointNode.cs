@@ -5,7 +5,6 @@ namespace Facepunch;
 /// </summary>
 public class GetRandomPointNode : BaseBehaviorNode
 {
-	private const string TARGET_POSITION_KEY = "target_position";
 	private bool _hasRun;
 
 	protected override NodeResult OnEvaluate( BotContext context )
@@ -17,14 +16,13 @@ public class GetRandomPointNode : BaseBehaviorNode
 		var randomPoint = Game.ActiveScene.NavMesh.GetRandomPoint();
 		if ( !randomPoint.HasValue )
 			return NodeResult.Failure;
-
-		context.SetData( TARGET_POSITION_KEY, randomPoint.Value );
+		
+		context.SetData( AIConst.TARGET_POS, randomPoint.Value );
 		_hasRun = true;
 		return NodeResult.Success;
 	}
 
-	// Optional: reset if needed when sequence resets
-	public void Reset()
+	public override void Reset()
 	{
 		_hasRun = false;
 	}

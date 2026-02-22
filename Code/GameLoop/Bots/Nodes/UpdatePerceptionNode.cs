@@ -1,3 +1,5 @@
+using Tec.AI;
+
 namespace Facepunch;
 
 public class UpdatePerceptionNode : BaseBehaviorNode
@@ -42,7 +44,7 @@ public class UpdatePerceptionNode : BaseBehaviorNode
 			else
 				teammates.Add( otherPawn );
 		}
-
+		
 		// Scan all dropped equipment (or other items)
 		foreach ( var pickup in pawn.Scene.GetAll<DroppedEquipment>() )
 		{
@@ -58,8 +60,27 @@ public class UpdatePerceptionNode : BaseBehaviorNode
 		context.SetData( ENEMIES_KEY, enemies );
 		context.SetData( TEAMMATES_KEY, teammates );
 		context.SetData( ITEMS_KEY, items );
+		
+		
+		// Hearing ///////////////////////////////////////////////////////////////////////////////////////
+		
+		var audioStims = AudioAIManager.GetAudioStims();
+		List<Vector3> sounds = [];
 
-		return (enemies.Count > 0 || teammates.Count > 0 || items.Count > 0)
+		foreach ( var audioStim in audioStims )
+		{
+			var distSqr = audioStim.Position.DistanceSquared( pawn.Head.WorldPosition );
+			if ( distSqr < audioStim.Range * audioStim.Range )
+			{
+				sounds.Add( audioStim.Position);
+			}
+		}
+		
+		context.SetData( AIConst.ALERT_SOUNDS_KEY, sounds );
+
+		//////////////////////////////////////////////////////////////////////////////////////////////////
+		
+		return (enemies.Count > 0 || teammates.Count > 0 || items.Count > 0 || sounds.Count > 0)
 			? NodeResult.Success
 			: NodeResult.Failure;
 	}

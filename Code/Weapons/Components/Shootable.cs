@@ -1,4 +1,5 @@
 using Sandbox.Events;
+using Tec.AI;
 
 namespace Facepunch;
 
@@ -229,6 +230,8 @@ public partial class Shootable : WeaponInputAction,
 		DoShootEffects();
 
 		Player.GameObject.Dispatch( new WeaponShotEvent() );
+		
+		new Tec.AI.AudioStim( Guid.Empty, Player.WorldPosition, 300000f, AudioStim.AudioStimType.Shoot, AudioStim.AudioStimDurationType.Finite, 1f );
 
 		for ( int i = 0; i < BulletCount; i++ )
 		{

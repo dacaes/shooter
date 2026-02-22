@@ -12,10 +12,10 @@ public class RoamBehavior : BaseBotBehavior
 	protected override void OnInitialize()
 	{
 		// Build behavior tree
-		_behavior = new SequenceNode(
+		_behavior = new RepeaterNode(new SequenceNode(
 			new GetRandomPointNode(),
 			new MoveToNode( 50, true )
-		);
+		));
 	}
 
 	public override NodeResult Update( BotContext ctx )

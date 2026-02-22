@@ -40,5 +40,7 @@ public class SequenceNode : IBehaviorNode
 	public void Reset()
 	{
 		_currentIndex = 0;
+		foreach (var child in _children)
+			child.Reset();
 	}
 }

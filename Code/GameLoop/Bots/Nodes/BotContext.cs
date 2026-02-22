@@ -11,6 +11,8 @@ public interface IBehaviorNode
 	/// Evaluate this node's behavior
 	/// </summary>
 	NodeResult Evaluate( BotContext context );
+
+	void Reset();
 }
 
 /// <summary>
@@ -27,6 +29,8 @@ public abstract class BaseBehaviorNode : IBehaviorNode
 	}
 
 	protected abstract NodeResult OnEvaluate( BotContext context );
+
+	public virtual void Reset() { }
 }
 
 /// <summary>
@@ -62,4 +66,5 @@ public class BotContext
 	public void SetData<T>( string key, T value ) => _blackboard[key] = value;
 	public T GetData<T>( string key ) => (T)_blackboard[key];
 	public bool HasData( string key ) => _blackboard.ContainsKey( key );
+	public bool RemoveData( string key ) => _blackboard.Remove( key );
 }
