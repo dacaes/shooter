@@ -64,11 +64,14 @@ public class UpdatePerceptionNode : BaseBehaviorNode
 		
 		// Hearing ///////////////////////////////////////////////////////////////////////////////////////
 		
-		var audioStims = AudioAIManager.GetAudioStims();
+		var audioStims = AudioAIManager.Instance.GetAudioStims();
 		List<Vector3> sounds = [];
 
 		foreach ( var audioStim in audioStims )
 		{
+			if ( audioStim.Faction == pawn.Team.ToFaction() )
+				continue;
+			
 			var distSqr = audioStim.Position.DistanceSquared( pawn.Head.WorldPosition );
 			if ( distSqr < audioStim.Range * audioStim.Range )
 			{

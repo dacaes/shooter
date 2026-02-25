@@ -5,7 +5,8 @@ public class AudioStim
 	public enum AudioStimType
 	{
 		Undefined,
-		Shoot
+		Shoot,
+		Footstep
 	}
 
 	public enum AudioStimDurationType
@@ -15,19 +16,19 @@ public class AudioStim
 		Continuous  // needs manual removal
 	}
 
-	public AudioStim(Guid instigator_guid, Vector3 position, float range, AudioStimType audioStimType = AudioStimType.Undefined, AudioStimDurationType durationType = AudioStimDurationType.Finite, float duration = 1f)
+	public AudioStim(Faction faction, Vector3 position, float range, AudioStimType audioStimType = AudioStimType.Undefined, AudioStimDurationType durationType = AudioStimDurationType.Finite, float duration = 0.6f)
 	{
-		this.InstigatorGuid = instigator_guid;
+		Faction = faction;
 		Position = position;
 		Range = range;
 		StimType = audioStimType;
 		DurationType = durationType;
 		Duration = duration;
 		TimeSinceTriggered = 0f;
-		AudioAIManager.NewAudioStim(this);
+		AudioAIManager.Instance.NewAudioStim(this);
 	}
 
-	public Guid InstigatorGuid { get; }
+	public Faction Faction { get; }
 	public Vector3 Position { get; }
 	public float Range { get; }
 	public AudioStimType StimType { get; }

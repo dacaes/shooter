@@ -1,4 +1,4 @@
-<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc29:version{3cec427c-1b0e-4d48-a90a-0436f33a6041} -->
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc30:version{8c2d7a91-9c42-4bf0-883a-5a3b1762d4f1} -->
 {
 	rootNode = 
 	{
@@ -29,6 +29,28 @@
 										quadratic = false
 										root_bone_name = ""
 										motion_type = "Single"
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 12
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 0.5
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 32
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 0.5
+										}
 									},
 								]
 								activity_name = ""
@@ -67,6 +89,28 @@
 										root_bone_name = ""
 										motion_type = "Single"
 									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 13
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 0.5
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 33
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 0.5
+										}
+									},
 								]
 								activity_name = ""
 								activity_weight = 1
@@ -104,6 +148,28 @@
 										root_bone_name = ""
 										motion_type = "Single"
 									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 13
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 0.5
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 32
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 0.5
+										}
+									},
 								]
 								activity_name = ""
 								activity_weight = 1
@@ -140,6 +206,28 @@
 										quadratic = false
 										root_bone_name = ""
 										motion_type = "Single"
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 11
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 0.5
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 32
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 0.5
+										}
 									},
 								]
 								activity_name = ""
@@ -317,6 +405,31 @@
 							{
 								_class = "AnimFile"
 								name = "crouch_E"
+								children = 
+								[
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 14
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 0.2
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 39
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 0.2
+										}
+									},
+								]
 								activity_name = ""
 								activity_weight = 1
 								weight_list_name = ""
@@ -340,6 +453,31 @@
 							{
 								_class = "AnimFile"
 								name = "crouch_N"
+								children = 
+								[
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 14
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 0.2
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 37
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 0.2
+										}
+									},
+								]
 								activity_name = ""
 								activity_weight = 1
 								weight_list_name = ""
@@ -363,6 +501,31 @@
 							{
 								_class = "AnimFile"
 								name = "crouch_NE"
+								children = 
+								[
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 14
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 0.2
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 37
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 0.2
+										}
+									},
+								]
 								activity_name = ""
 								activity_weight = 1
 								weight_list_name = ""
@@ -386,6 +549,31 @@
 							{
 								_class = "AnimFile"
 								name = "crouch_NW"
+								children = 
+								[
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 14
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 0.2
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 38
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 0.2
+										}
+									},
+								]
 								activity_name = ""
 								activity_weight = 1
 								weight_list_name = ""
@@ -409,6 +597,31 @@
 							{
 								_class = "AnimFile"
 								name = "crouch_S"
+								children = 
+								[
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 18
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 0.2
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 43
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 0.2
+										}
+									},
+								]
 								activity_name = ""
 								activity_weight = 1
 								weight_list_name = ""
@@ -432,6 +645,31 @@
 							{
 								_class = "AnimFile"
 								name = "crouch_SE"
+								children = 
+								[
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 20
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 0.2
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 43
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 0.2
+										}
+									},
+								]
 								activity_name = ""
 								activity_weight = 1
 								weight_list_name = ""
@@ -455,6 +693,31 @@
 							{
 								_class = "AnimFile"
 								name = "crouch_SW"
+								children = 
+								[
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 18
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 0.2
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 42
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 0.2
+										}
+									},
+								]
 								activity_name = ""
 								activity_weight = 1
 								weight_list_name = ""
@@ -478,6 +741,31 @@
 							{
 								_class = "AnimFile"
 								name = "crouch_W"
+								children = 
+								[
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 17
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 0.2
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 39
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 0.2
+										}
+									},
+								]
 								activity_name = ""
 								activity_weight = 1
 								weight_list_name = ""
@@ -508,6 +796,31 @@
 							{
 								_class = "AnimFile"
 								name = "jump_N"
+								children = 
+								[
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 27
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 1.5
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 33
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 1.0
+										}
+									},
+								]
 								activity_name = ""
 								activity_weight = 1
 								weight_list_name = ""
@@ -531,6 +844,31 @@
 							{
 								_class = "AnimFile"
 								name = "jump_S"
+								children = 
+								[
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 19
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 1.5
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 33
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 1.0
+										}
+									},
+								]
 								activity_name = ""
 								activity_weight = 1
 								weight_list_name = ""
@@ -651,6 +989,31 @@
 									{
 										_class = "AnimFile"
 										name = "Jump_Idle_Land"
+										children = 
+										[
+											{
+												_class = "AnimEvent"
+												event_class = "AE_FOOTSTEP"
+												event_frame = 5
+												event_keys = 
+												{
+													Attachment = ""
+													Foot = "0"
+													Volume = 1.52
+												}
+											},
+											{
+												_class = "AnimEvent"
+												event_class = "AE_FOOTSTEP"
+												event_frame = 11
+												event_keys = 
+												{
+													Attachment = ""
+													Foot = "1"
+													Volume = 1.0
+												}
+											},
+										]
 										activity_name = ""
 										activity_weight = 1
 										weight_list_name = ""
@@ -683,6 +1046,31 @@
 							{
 								_class = "AnimFile"
 								name = "jog_E"
+								children = 
+								[
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 9
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 1.0
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 22
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 1.0
+										}
+									},
+								]
 								activity_name = ""
 								activity_weight = 1
 								weight_list_name = ""
@@ -706,6 +1094,31 @@
 							{
 								_class = "AnimFile"
 								name = "jog_N"
+								children = 
+								[
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 7
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 1.0
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 18
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 1.0
+										}
+									},
+								]
 								activity_name = ""
 								activity_weight = 1
 								weight_list_name = ""
@@ -729,6 +1142,31 @@
 							{
 								_class = "AnimFile"
 								name = "jog_NE"
+								children = 
+								[
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 9
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 1.0
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 20
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 1.0
+										}
+									},
+								]
 								activity_name = ""
 								activity_weight = 1
 								weight_list_name = ""
@@ -752,6 +1190,31 @@
 							{
 								_class = "AnimFile"
 								name = "jog_NW"
+								children = 
+								[
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 7
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 1.0
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 18
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 1.0
+										}
+									},
+								]
 								activity_name = ""
 								activity_weight = 1
 								weight_list_name = ""
@@ -775,6 +1238,31 @@
 							{
 								_class = "AnimFile"
 								name = "jog_S"
+								children = 
+								[
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 10
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 1.0
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 22
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 1.0
+										}
+									},
+								]
 								activity_name = ""
 								activity_weight = 1
 								weight_list_name = ""
@@ -798,6 +1286,31 @@
 							{
 								_class = "AnimFile"
 								name = "jog_SE"
+								children = 
+								[
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 10
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 1.0
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 22
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 1.0
+										}
+									},
+								]
 								activity_name = ""
 								activity_weight = 1
 								weight_list_name = ""
@@ -821,6 +1334,31 @@
 							{
 								_class = "AnimFile"
 								name = "jog_SW"
+								children = 
+								[
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 10
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 1.0
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 22
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 1.0
+										}
+									},
+								]
 								activity_name = ""
 								activity_weight = 1
 								weight_list_name = ""
@@ -844,6 +1382,31 @@
 							{
 								_class = "AnimFile"
 								name = "jog_W"
+								children = 
+								[
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 9
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 1.0
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 22
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 1.0
+										}
+									},
+								]
 								activity_name = ""
 								activity_weight = 1
 								weight_list_name = ""
@@ -867,6 +1430,31 @@
 							{
 								_class = "AnimFile"
 								name = "sprint"
+								children = 
+								[
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 8
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 2.0
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 17
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 2.0
+										}
+									},
+								]
 								activity_name = ""
 								activity_weight = 1
 								weight_list_name = ""

@@ -1,15 +1,50 @@
 namespace Tec.AI;
 
-public static class AudioAIManager
+/// <summary>
+/// Singleton AudioAIManager. It is a singleton and not a static class because I want to clear the stims OnStart.
+/// </summary>
+public class AudioAIManager : Component
 {
-	public static List<AudioStim> audioStims = new();
+	private static AudioAIManager _instance;
+	public static AudioAIManager Instance
+	{
+		get
+		{
+			if ( _instance == null )
+			{
+				// Auto-spawn the singleton if it doesn't exist
+				_instance = new AudioAIManager();
+				Log.Info( "AudioAIManager auto-spawned" );
+			}
+			return _instance;
+		}
+	}
+	
+	private AudioAIManager()
+	{
+		if ( _instance != null )
+		{
+			Log.Warning( "Attempted to create a second GameManager!" );
+			return;
+		}
 
-	public static void Clear()
+		_instance = this;
+		Log.Info( "GameManager initialized" );
+	}
+	
+	public List<AudioStim> audioStims = new();
+
+	public void Clear()
 	{
 		audioStims.Clear();
 	}
-	
-	public static void NewAudioStim(AudioStim audioStim)
+
+	protected override void OnStart()
+	{
+		Clear();
+	}
+
+	public void NewAudioStim(AudioStim audioStim)
 	{
 		if(audioStim.DurationType != AudioStim.AudioStimDurationType.Instant)
 		{
@@ -21,7 +56,7 @@ public static class AudioAIManager
 		}
 	}
 
-	public static List<AudioStim> GetAudioStims()
+	public List<AudioStim> GetAudioStims()
 	{
 		List<AudioStim> validStims = [];
 		

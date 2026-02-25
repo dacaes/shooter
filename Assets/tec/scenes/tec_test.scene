@@ -352,7 +352,7 @@
         "b4ca6d36-f647-49b3-9151-8ef4c63aeddd": "fe2161e5-285e-4a17-96d4-8f772d8b8317",
         "50de49ef-0287-435d-b570-e48047718014": "ec11469d-7277-4c55-94be-54fc37fb35db",
         "4dc414cd-ed6d-4fcd-bd26-0c4c340b5301": "374405c6-ea6c-4efa-b4e4-c0f0ece618e5",
-        "2176ae46-da52-48a9-b0d1-0ccd8f8d7e13": "93f4d1b6-bfc8-4707-8d00-57da5a8753cc"
+        "fb362f66-fc01-4a91-b7fb-1820be475525": "b1b32ff8-e10a-4345-950a-efa5632f12a4"
       }
     },
     {
@@ -1087,6 +1087,56 @@
             "Box": {
               "Mins": "640.3585,440.0947,-50",
               "Maxs": "1770.669,1380.667,50"
+            },
+            "Capsule": {
+              "CenterA": "0,0,10",
+              "CenterB": "0,0,90",
+              "Radius": 10
+            }
+          }
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "99d023c8-931a-4736-b226-9c290cccc722",
+      "__version": 2,
+      "Flags": 0,
+      "Name": "Navmesh blocker (4)",
+      "Position": "16,-2320,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkFlags": 0,
+      "NetworkOrphaned": 0,
+      "NetworkTransmit": true,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.NavMeshArea",
+          "__guid": "ac084ac7-5af4-471a-a69d-684adc3aa1ca",
+          "__enabled": true,
+          "Flags": 0,
+          "Area": null,
+          "IsBlocker": true,
+          "LinkedCollider": null,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "SceneVolume": {
+            "Type": "Box",
+            "Sphere": {
+              "Center": "0,0,0",
+              "Radius": 10
+            },
+            "Box": {
+              "Mins": "-804.8151,758.9023,249.5132",
+              "Maxs": "-372.3436,1074.297,598.2567"
             },
             "Capsule": {
               "CenterA": "0,0,10",
@@ -31502,7 +31552,7 @@
       "__version": 2,
       "Flags": 0,
       "Name": "powerpole01",
-      "Position": "-339.9998,-1332,0.3346168",
+      "Position": "-364.1828,-1332,0.3346168",
       "Rotation": "0,0,0,1",
       "Scale": "1,1,1",
       "Tags": "",
@@ -35625,7 +35675,7 @@
       "__version": 2,
       "Flags": 0,
       "Name": "watermelon",
-      "Position": "-340.2631,-1332.081,283.5402",
+      "Position": "-364.4461,-1332.081,283.5402",
       "Rotation": "0,0,0,1",
       "Scale": "1,1,1",
       "Tags": "",
@@ -35935,9 +35985,9 @@
       "__version": 2,
       "Flags": 0,
       "Name": "electrical_enclosure_double_02",
-      "Position": "-499.7168,-1497.704,-0.00005068257",
+      "Position": "-501.76,-1502.519,-0.00005068257",
       "Rotation": "0,0,0,1",
-      "Scale": "1,1,1",
+      "Scale": "0.8,0.8,0.8",
       "Tags": "",
       "Enabled": true,
       "NetworkMode": 2,
@@ -35953,7 +36003,7 @@
           "Flags": 0,
           "BodyGroups": 18446744073709551615,
           "Health": 0,
-          "IsStatic": false,
+          "IsStatic": true,
           "MaterialGroup": null,
           "Model": "models/props/electrical/enclosures/electrical_enclosure_double_02.vmdl",
           "OnComponentDestroy": null,
@@ -35969,7 +36019,7 @@
         },
         {
           "__type": "Sandbox.ModelRenderer",
-          "__guid": "e588ec0f-dbd6-4437-9b6d-6599fa57f614",
+          "__guid": "fd1107f3-4bdb-40d6-8a04-c981a365d8f6",
           "__enabled": true,
           "Flags": 0,
           "BodyGroups": 18446744073709551615,
@@ -35996,7 +36046,7 @@
         },
         {
           "__type": "Sandbox.ModelCollider",
-          "__guid": "70cf87b9-1e51-4a08-961a-034eab9a024a",
+          "__guid": "12e22e60-0b75-419e-8ca8-fe119449b839",
           "__enabled": true,
           "Flags": 0,
           "ColliderFlags": 0,
@@ -36015,43 +36065,9 @@
           "OnTriggerEnter": null,
           "OnTriggerExit": null,
           "RollingResistance": null,
-          "Static": false,
+          "Static": true,
           "Surface": null,
           "SurfaceVelocity": "0,0,0"
-        },
-        {
-          "__type": "Sandbox.Rigidbody",
-          "__guid": "38d70d06-7957-43ed-a963-e27b7ad7aa65",
-          "__enabled": true,
-          "Flags": 0,
-          "AngularDamping": 0,
-          "EnableImpactDamage": true,
-          "EnhancedCcd": false,
-          "Gravity": true,
-          "GravityScale": 1,
-          "ImpactDamage": 0,
-          "LinearDamping": 0,
-          "Locking": {
-            "X": false,
-            "Y": false,
-            "Z": false,
-            "Pitch": false,
-            "Yaw": false,
-            "Roll": false
-          },
-          "MassCenterOverride": "0,0,0",
-          "MassOverride": 240,
-          "MinImpactDamageSpeed": 500,
-          "MotionEnabled": true,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "OverrideMassCenter": false,
-          "RigidbodyFlags": 0,
-          "StartAsleep": false
         }
       ],
       "Children": []
